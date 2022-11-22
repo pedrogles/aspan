@@ -63,13 +63,6 @@ export default function Contact() {
                         </span>
                     </h3>
                 </div>
-                <div className="location">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <MdLocationPin className='locationIcon'/>
-                        <p>R.Antônio Correa de Matos, 55  
-                        Cristo Redentorista, João Pessoa – PB, 58071-310</p>
-                    </a>
-                </div>
             </footer>
         </div>
     )
