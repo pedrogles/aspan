@@ -1,0 +1,331 @@
+#navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    .fixed {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 3.125rem;
+        width: 100%;
+        background-color: #7C99FF;
+        border-radius: 0 0 0.625rem 0.625rem;
+        .items {
+            img {
+                width: 5.625rem;
+                margin: 1rem;
+            }
+            .desktop {
+                display: none;
+            }
+            .buttons {
+                display: none;
+            }
+        }
+        .hamburguer {
+            button {
+                background-color: transparent;
+                padding: 0.25rem 0.5rem;
+                margin-right: 1rem;
+                border: none;
+                .hamburguerIcon {
+                    color: #ffffff;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url("../../assets/images/nav.png");
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+            border-radius: 0 0 0 0.625rem;
+            width: 15rem;
+            height: 100vh;
+            .closeMenu {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                height: 2.5rem;
+                width: 15rem;
+                button {
+                    background-color: transparent;
+                    border: none;
+                    .closeIcon {
+                        color: #ffffff;
+                        margin: 1rem 1rem 0 0;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+            .mobile {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 5rem;
+                ul {
+                    padding: 0;
+                    li {
+                        list-style: none;
+                        text-align: center;
+                        margin: 1rem 0;
+                        a {
+                            color: #ffffff;
+                            text-shadow: 0.125rem 0.125rem 0.188rem black;
+                            font-size: 1.5rem;
+                            text-decoration: none;
+                        }
+                    }
+                    li:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .mobileButton {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 5rem;
+                .btnLogin {
+                    background-color: #ffffff;
+                    color: #000000;
+                    font-size: 0.75rem;
+                    border-radius: 1.25rem;
+                    border: none;
+                    width: 6.875rem;
+                    height: 1.875rem;
+                    margin: 0.25rem;
+                }
+                .btnRegister {
+                    background-color: #7C99FF;
+                    font-size: 0.75rem;
+                    color: #ffffff;
+                    border-radius: 1.25rem;
+                    border: none;
+                    width: 6.875rem;
+                    height: 1.875rem;
+                    margin: 0.25rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    #navbar {
+        .fixed {
+            height: 6.25rem;
+            .items img {
+                width: 12.5rem;
+            }
+            .hamburguer button .hamburguerIcon {
+                font-size: 2.5rem;
+                margin-right: 0.625rem;
+            }
+            .menu {
+                width: 28.125rem;
+                .closeMenu {
+                    height: 5.625rem;
+                    width: 25.625rem;
+                    button .closeIcon {
+                        font-size: 2.5rem;
+                    }
+                }
+                .mobile {
+                    ul li {
+                        margin: 1.5rem 0;
+                        a {
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+                .mobileButton {
+                    .btnLogin {
+                        font-size: 1.625rem;
+                        border-radius: 1.875rem;
+                        width: 12.5rem;
+                        height: 3.75rem;
+                        margin: 1rem;
+                    }
+                    .btnRegister {
+                        font-size: 1.625rem;
+                        border-radius: 1.875rem;
+                        border: none;
+                        width: 12.5rem;
+                        height: 3.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+    #navbar {
+        .fixed {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 6rem;
+            width: 100%;
+            background-color: #7C99FF;
+            border-radius: 0 0 0.625rem 0.625rem;
+            .items {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100vw;
+                img {
+                    width: 12rem;
+                }
+                .desktop {
+                    display: flex;
+                    align-items: center;
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        li {
+                            padding: 0.8rem;
+                            list-style: none;
+                            a {
+                                font-size: 1.563rem;
+                                font-weight: 400;
+                                color: #ffffff;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                .buttons {
+                    display: flex;
+                    align-items: center;
+
+                    .btnLogin {
+                        cursor: pointer;
+                        background-color: transparent;
+                        border: solid 0.1rem #ffffff;
+                        border-radius: 30px;
+                        width: 100px;
+                        height: 50px;
+                        font-size: 1.25rem;
+                        color: #ffffff;
+                        margin: 0 0.5rem;
+                    }
+                    .btnLogin:hover {
+                        cursor: pointer;
+                        background-color: #ffffff;
+                        border: none;
+                        color: #000000;
+                    }
+                    .btnRegister {
+                        cursor: pointer;
+                        background-color: #4a62b8;
+                        border: solid 0.1rem #ffffff;
+                        border-radius: 30px;
+                        border: none;
+                        width: 140px;
+                        height: 50px;
+                        font-size: 1.25rem;
+                        color: #ffffff;
+                        margin: 0 1rem;
+                    }
+                    .btnRegister:hover {
+                        cursor: pointer;
+                        background-color: #172e7e;
+                        border: none;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .hamburguer {
+                display: none;
+            }
+        }
+    }
+}
+@media (min-width: 1201px) {
+    #navbar {
+        .fixed {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 6rem;
+            width: 100%;
+            background-color: #7C99FF;
+            border-radius: 0 0 0.625rem 0.625rem;
+            .items {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100vw;
+                img {
+                    width: 12rem;
+                }
+                .desktop {
+                    display: flex;
+                    align-items: center;
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        li {
+                            padding: 0.8rem;
+                            list-style: none;
+                            a {
+                                font-size: 1.563rem;
+                                font-weight: 400;
+                                color: #ffffff;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                .buttons {
+                    display: flex;
+                    align-items: center;
+
+                    .btnLogin {
+                        background-color: transparent;
+                        border: solid 0.1rem #ffffff;
+                        border-radius: 30px;
+                        width: 100px;
+                        height: 50px;
+                        font-size: 1.25rem;
+                        color: #ffffff;
+                    }
+                    .btnLogin:hover {
+                        cursor: pointer;
+                        background-color: #ffffff;
+                        border: none;
+                        color: #000000;
+                    }
+                    .btnRegister {
+                        background-color: #4a62b8;
+                        border: solid 0.1rem #ffffff;
+                        border-radius: 30px;
+                        border: none;
+                        width: 140px;
+                        height: 50px;
+                        font-size: 1.25rem;
+                        color: #ffffff;
+                        margin:0 4rem 0 1rem;
+                    }
+                    .btnRegister:hover {
+                        cursor: pointer;
+                        background-color: #172e7e;
+                        border: none;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .hamburguer {
+                display: none;
+            }
+        }
+    }
+}

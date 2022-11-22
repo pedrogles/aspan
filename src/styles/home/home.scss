@@ -1,0 +1,145 @@
+#home {
+    background-color: #829DFF;
+    .image {
+        position: relative;
+        background-color: #ED1C24;
+        .mobile {
+            background-color: #ED1C24;
+            width: 100%;
+            margin-top: 2.8rem;
+        }
+        .desktop {
+            display: none;
+        }
+        .banner {
+            display: none;
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+    #home {
+        .image {
+            position: relative;
+            background-color: #829DFF;
+            .mobile {
+                position: relative;
+                width: 100%;
+                margin-top: 2.8rem;
+            }
+            .desktop {
+                display: none;
+            }
+            .banner {
+                position: absolute;
+                bottom: 0;
+                height: 20rem;
+                width: 100%;
+                background-color: #00000050;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-radius: 20px 20px 0 0;
+                border: none;
+                p {
+                    font-size: 2rem;
+                    font-weight: 400;
+                    color: #ffffff;
+                    margin: 20px 100px;
+                    
+                }
+                .donateMensage {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0 100px;
+                    align-items: center;
+                    p {
+                        font-size: 1.625rem;
+                        font-weight: 400;
+                        color: #ffffff;
+                        margin: 0;
+                    }
+                    button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #373C9B;
+                        width: 200px;
+                        height: 50px;
+                        text-align: center;
+                        border-radius: 30px;
+                        border: none;
+                        margin-left: 16px;
+                        a {
+                            font-size: 1.125rem;
+                            color: #ffffff;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1201px) {
+    #home {
+        height: 950px;
+        .image {
+            position: relative;
+            .desktop {
+                display: block;
+                width: 100%;
+            }
+            .banner {
+                position: absolute;
+                bottom: 0;
+                height: 20rem;
+                width: 100%;
+                background-color: #00000050;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-radius: 20px 20px 0 0;
+                border: none;
+                p {
+                    font-size: 3rem;
+                    font-weight: 400;
+                    color: #ffffff;
+                    margin: 1rem 5rem 1rem 10rem;
+                    
+                }
+                .donateMensage {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0 100px;
+                    align-items: center;
+                    p {
+                        font-size: 1.625rem;
+                        font-weight: 400;
+                        color: #ffffff;
+                        margin: 0 2rem 0 4rem;
+                    }
+                    button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #373C9B;
+                        width: 200px;
+                        height: 50px;
+                        text-align: center;
+                        border-radius: 30px;
+                        border: none;
+                        margin-left: 16px;
+                        a {
+                            font-size: 1.125rem;
+                            color: #ffffff;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .mobile {
+                display: none;
+            }
+        }
+    }
+}

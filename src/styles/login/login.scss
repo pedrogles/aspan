@@ -1,0 +1,341 @@
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #829DFF;
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../../assets/images/login.jpg");
+        background-size: 280px 450px;
+        background-repeat: no-repeat;
+        opacity: 1;
+        border-radius: 10px;
+        width: 280px;
+        height: 400px;
+        h2 {
+            font-size: 1.25rem;
+            text-shadow: 2px 2px 3px #000000;
+            color: #ffffff;
+            font-weight: 400;
+        }
+        .email {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 25px 0 10px 0;
+            label {
+                font-size: 0.875rem;
+                text-shadow: 2px 2px 3px #000000;
+                color: #ffffff;
+                margin: 0 0 5px 10px;
+            }
+            input {
+                background-color: #ffffff;
+                border: solid 0.1rem #ffffff;
+                border-radius: 20px;
+                width: 220px;
+                height: 30px;
+            }
+            input::placeholder {
+                color: #000000;
+                font-size: 0.625rem;
+                
+                font-weight: 400;
+                transform: translate3d(10px,-1px,0);
+                text-align: left;
+            }
+        }
+        .password {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 0 5px 0;
+            label {
+                font-size: 0.875rem;
+                text-shadow: 2px 2px 3px #000000;
+                color: #ffffff;
+                margin: 0 0 5px 10px;
+            }
+            input {
+                background-color: #ffffff;
+                border: solid 0.1rem #ffffff;
+                border-radius: 20px;
+                width: 220px;
+                height: 30px;
+            }
+            input::placeholder {
+                color: #000000;
+                font-size: 0.625rem;
+                font-weight: 400;
+                transform: translate3d(10px,-1px,0);
+                text-align: left;
+            }
+            .passwordForgot {
+                width: 210px;
+                display: flex;
+                justify-content: end;
+                a {
+                    background-color: #00000070;
+                    font-size: 0.625rem;
+                    color: #ffffff;
+                }
+            }
+        }
+        .btnLogin {
+            font-size: 0.625rem;
+            background-color: #ffffff;
+            border-radius: 20px;
+            border: none;
+            color: #000000;
+            width: 80px;
+            height: 25px;
+            margin: 1.5rem;
+        }
+        .registerText {
+            text-align: center;
+            background-color: #00000050;
+            border-radius: 10px;
+            padding: 0.8rem;
+            p {
+                font-size: 0.75rem;
+                color: #ffffff;
+                font-weight: 400;
+            }
+            a {
+                font-size: 0.625rem;
+                font-weight: 400;
+                color: #ffffff;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+    #login {
+        .card {
+            background-size: 300px 600px;
+            border-radius: 10px;
+            width: 300px;
+            height: 400px;
+            margin-top: 5rem;
+            h2 {
+                font-size: 2rem;
+                text-shadow: 2px 2px 3px #000000;
+                color: #ffffff;
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }
+            .email {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 0 10px 0;
+                label {
+                    font-size: 1rem;
+                    text-shadow: 2px 2px 3px #000000;
+                    color: #ffffff;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: #ffffff;
+                    border: solid 0.1rem #ffffff;
+                    border-radius: 20px;
+                    width: 220px;
+                    height: 30px;
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.6rem;
+                    
+                    font-weight: 400;
+                    transform: translate3d(10px,0,0);
+                    text-align: left;
+                }
+            }
+            .password {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 0 5px 0;
+                label {
+                    font-size: 1rem;
+                    text-shadow: 2px 2px 3px #000000;
+                    color: #ffffff;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: #ffffff;
+                    border: solid 0.1rem #ffffff;
+                    border-radius: 20px;
+                    width: 220px;
+                    height: 30px;
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.6rem;
+                    font-weight: 400;
+                    transform: translate3d(10px,0,0);
+                    text-align: left;
+                }
+                .passwordForgot {
+                    width: 210px;
+                    display: flex;
+                    justify-content: end;
+                    a {
+                        background-color: #00000070;
+                        font-size: 0.7rem;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .btnLogin {
+                cursor: pointer;
+                font-size: 0.8rem;
+                background-color: #ffffff;
+                text-decoration: none;
+                border-radius: 20px;
+                border: none;
+                color: #000000;
+                width: 100px;
+                height: 30px;
+                margin: 1rem 0 0.5rem 0;
+            }
+            .registerText {
+                text-align: center;
+                background-color: #00000070;
+                border-radius: 10px;
+                padding: 0.8rem;
+                margin: 1rem;
+                p {
+                    font-size: 0.8rem;
+                    color: #ffffff;
+                    font-weight: 400;
+                    margin-bottom: 0.5rem;
+                }
+                a {
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    color: #ffffff;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1201px) {
+    #login {
+        .card {
+            background-size: 400px 550px;
+            border-radius: 10px;
+            width: 400px;
+            height: 550px;
+            margin-top: 5rem;
+            h2 {
+                font-size: 2rem;
+                text-shadow: 2px 2px 3px #000000;
+                color: #ffffff;
+                font-weight: 400;
+                margin-bottom: 2rem;
+            }
+            .email {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 0 1.5rem 0;
+                label {
+                    font-size: 1rem;
+                    text-shadow: 2px 2px 3px #000000;
+                    color: #ffffff;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: #ffffff;
+                    border: solid 0.1rem #ffffff;
+                    border-radius: 10px;
+                    width: 280px;
+                    height: 40px;
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.8rem;
+                    
+                    font-weight: 400;
+                    transform: translate3d(10px,0,0);
+                    text-align: left;
+                }
+            }
+            .password {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 0 5px 0;
+                label {
+                    font-size: 1rem;
+                    text-shadow: 2px 2px 3px #000000;
+                    color: #ffffff;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: #ffffff;
+                    border: solid 0.1rem #ffffff;
+                    border-radius: 10px;
+                    width: 280px;
+                    height: 40px;
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    transform: translate3d(10px,-1px,0);
+                    text-align: left;
+                }
+                .passwordForgot {
+                    width: 270px;
+                    display: flex;
+                    justify-content: end;
+                    a {
+                        background-color: #00000070;
+                        font-size: 0.9rem;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .btnLogin {
+                cursor: pointer;
+                font-size: 1rem;
+                background-color: #ffffff;
+                text-decoration: none;
+                border-radius: 20px;
+                border: none;
+                color: #000000;
+                width: 100px;
+                height: 40px;
+                margin: 2rem 0 1rem 0;
+            }
+            .registerText {
+                text-align: center;
+                background-color: #00000070;
+                border-radius: 10px;
+                padding: 1rem;
+                margin: 1rem;
+                p {
+                    font-size: 1rem;
+                    color: #ffffff;
+                    font-weight: 400;
+                    margin-bottom: 1rem;
+                }
+                a {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: #ffffff;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

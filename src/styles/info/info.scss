@@ -1,0 +1,1464 @@
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #829DFF;
+    height: 1300px;
+    h2 {
+        font-size: 1.25rem;
+        color: #ffffff;
+        font-weight: 400;
+        margin-top: 100px;
+    }
+    .responsible {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        border-radius: 20px;
+        margin-top: 30px;
+        width: 280px;
+        height: 420px;
+        .responsibleHeader {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 240px;
+            margin-bottom: 20px;
+            h3 {
+                font-size: 0.875rem;
+                font-weight: 400;
+            }
+            button {
+                background-color: transparent;
+                border: none;
+                .editIcon {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .name {
+            width: 200px;
+            margin-bottom: 15px;
+            h4 {
+                font-size: 0.75rem;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.625rem;
+                font-weight: 400;
+            }
+        }
+        .rg {
+            width: 200px;
+            h4 {
+                font-size: 0.75rem;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.625rem;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+        }
+        .cpf {
+            width: 200px;
+            h4 {
+                font-size: 0.75rem;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.625rem;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+        }
+        .email {
+            width: 200px;
+            h4 {
+                font-size: 0.75rem;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.625rem;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+        }
+        .address {
+            width: 200px;
+            h4 {
+                font-size: 0.75rem;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.625rem;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+        }
+        .phone1 {
+            width: 200px;
+            h4 {
+                font-size: 0.75rem;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.625rem;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+        }
+        .phone2 {
+            width: 200px;
+            h4 {
+                font-size: 0.75rem;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.625rem;
+                font-weight: 400;
+            }
+        }
+    }
+    .responsibleEdit {
+        position: absolute;
+        display: none;
+        justify-content: center;
+        background-color: #00000050;
+        width: 100%;
+        height: 1300px;
+        .responsibleEditArea {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border-radius: 20px;
+            width: 280px;
+            height: 600px;
+            margin-top: 150px;
+            .responsibleEditHeader {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 240px;
+                margin-bottom: 20px;
+                h3 {
+                    color: #000000;
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                }
+                button {
+                    background-color: transparent;
+                    border: none;
+                    margin: 0;
+                    width: auto;
+                    .closeIcon {
+                        color: #000000;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                label {
+                    font-size: 0.875rem;
+                    color: #000000;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: transparent;
+                    border: solid 0.1rem #000000;
+                    border-radius: 10px;
+                    width: 220px;
+                    height: 30px;
+                    color: #000000;
+                    font-size: 1rem;
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.625rem;
+                    transform: translate3d(10px,-2px,0);
+                    text-align: left;
+                }
+            }
+            .rg {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 15px 0 0 0;
+                label {
+                    font-size: 0.875rem;
+                    color: #000000;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: transparent;
+                    border: solid 0.1rem #000000;
+                    border-radius: 10px;
+                    width: 220px;
+                    height: 30px;
+                    color: #000000;
+                    font-size: 1rem;
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.625rem;
+                    transform: translate3d(10px,-2px,0);
+                    text-align: left;
+                }
+            }
+            .cpf {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 15px 0 0 0;
+                label {
+                    font-size: 0.875rem;
+                    color: #000000;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: transparent;
+                    border: solid 0.1rem #000000;
+                    border-radius: 10px;
+                    width: 220px;
+                    height: 30px;
+                    color: #000000;
+                    font-size: 1rem;
+                    
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.625rem;
+                    transform: translate3d(10px,-2px,0);
+                    text-align: left;
+                }
+            }
+            .email {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 15px 0 0 0;
+                label {
+                    font-size: 0.875rem;
+                    color: #000000;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: transparent;
+                    border: solid 0.1rem #000000;
+                    border-radius: 10px;
+                    width: 220px;
+                    height: 30px;
+                    color: #000000;
+                    font-size: 1rem;
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.625rem;
+                    transform: translate3d(10px,-2px,0);
+                    text-align: left;
+                }
+            }
+            .address {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 15px 0 0 0;
+                label {
+                    font-size: 0.875rem;
+                    color: #000000;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: transparent;
+                    border: solid 0.1rem #000000;
+                    border-radius: 10px;
+                    width: 220px;
+                    height: 30px;
+                    color: #000000;
+                    font-size: 1rem;
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.625rem;
+                    transform: translate3d(10px,-2px,0);
+                    text-align: left;
+                }
+            }
+            .phone1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 15px 0 0 0;
+                label {
+                    font-size: 0.875rem;
+                    color: #000000;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: transparent;
+                    border: solid 0.1rem #000000;
+                    border-radius: 10px;
+                    width: 220px;
+                    height: 30px;
+                    color: #000000;
+                    font-size: 1rem;
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.625rem;
+                    transform: translate3d(10px,-2px,0);
+                    text-align: left;
+                }
+            }
+            .phone2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 15px 0 0 0;
+                label {
+                    font-size: 0.875rem;
+                    color: #000000;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: transparent;
+                    border: solid 0.1rem #000000;
+                    border-radius: 10px;
+                    width: 220px;
+                    height: 30px;
+                    color: #000000;
+                    font-size: 1rem;
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.625rem;
+                    transform: translate3d(10px,-2px,0);
+                    text-align: left;
+                }
+            }
+            button {
+                background-color: #373C9B;
+                color: #ffffff;
+                border-radius: 20px;
+                border: none;
+                width: 90px;
+                height: 30px;
+                font-size: 0.75rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+    .patient {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        border-radius: 20px;
+        margin-top: 30px;
+        width: 280px;
+        height: 520px;
+        .patientHeader {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 240px;
+            margin-bottom: 20px;
+            h3 {
+                font-size: 0.875rem;
+                font-weight: 400;
+            }
+            button {
+                background-color: transparent;
+                border: none;
+                .editIcon {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .name {
+            width: 200px;
+            margin-bottom: 15px;
+            h4 {
+                font-size: 0.75rem;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.625rem;
+                font-weight: 400;
+            }
+        }
+        .rg {
+            width: 200px;
+            h4 {
+                font-size: 0.75rem;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.625rem;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+        }
+        .cpf {
+            width: 200px;
+            h4 {
+                font-size: 0.75rem;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.625rem;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+        }
+        .birth {
+            width: 200px;
+            h4 {
+                font-size: 0.75rem;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.625rem;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+        }
+        .comments {
+            width: 200px;
+            h4 {
+                font-size: 0.75rem;
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.625rem;
+                font-weight: 400;
+                height: 200px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .patientEdit {
+        position: absolute;
+        display: none;
+        justify-content: center;
+        background-color: #00000050;
+        width: 100%;
+        height: 1300px;
+        .patientEditArea {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border-radius: 20px;
+            width: 280px;
+            height: 650px;
+            margin-top: 600px;
+            .patientEditHeader {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 240px;
+                margin-bottom: 20px;
+                h3 {
+                    color: #000000;
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                }
+                button {
+                    background-color: transparent;
+                    border: none;
+                    margin: 0;
+                    width: auto;
+                    .closeIcon {
+                        color: #000000;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                label {
+                    font-size: 0.875rem;
+                    color: #000000;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: transparent;
+                    border: solid 0.1rem #000000;
+                    border-radius: 10px;
+                    width: 220px;
+                    height: 30px;
+                    color: #000000;
+                    font-size: 1rem;
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.625rem;
+                    transform: translate3d(10px,-2px,0);
+                    text-align: left;
+                }
+            }
+            .rg {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 15px 0 0 0;
+                label {
+                    font-size: 0.875rem;
+                    color: #000000;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: transparent;
+                    border: solid 0.1rem #000000;
+                    border-radius: 10px;
+                    width: 220px;
+                    height: 30px;
+                    color: #000000;
+                    font-size: 1rem;
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.625rem;
+                    transform: translate3d(10px,-2px,0);
+                    text-align: left;
+                }
+            }
+            .cpf {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 15px 0 0 0;
+                label {
+                    font-size: 0.875rem;
+                    color: #000000;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: transparent;
+                    border: solid 0.1rem #000000;
+                    border-radius: 10px;
+                    width: 220px;
+                    height: 30px;
+                    color: #000000;
+                    font-size: 1rem;
+                }
+                input::placeholder {
+                    color: #000000;
+                    font-size: 0.625rem;
+                    transform: translate3d(10px,-2px,0);
+                    text-align: left;
+                }
+            }
+            .birth {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 15px 0 0 0;
+                label {
+                    font-size: 0.875rem;
+                    color: #000000;
+                    margin: 0 0 5px 10px;
+                }
+                input {
+                    background-color: transparent;
+                    border: solid 0.1rem #000000;
+                    border-radius: 10px;
+                    width: 220px;
+                    height: 30px;
+                    color: #000000;
+                    font-size: 1rem;
+                }
+                input[type=date] {
+                    color: #000000;
+                    font-size: 0.625rem;
+                    padding-left: 10px;
+                }
+            }
+            .comments {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 15px 0 0 0;
+                label {
+                    font-size: 0.875rem;
+                    color: #000000;
+                    margin: 0 0 5px 10px;
+                }
+                textarea {
+                    background-color: transparent;
+                    border: solid 0.1rem #000000;
+                    border-radius: 10px;
+                    color: #000000;
+                    font-size: 1rem;
+                }
+                textarea::placeholder {
+                    color: #000000;
+                    font-size: 1rem;
+                    padding: 1rem 10px;
+                    text-align: left;
+                }
+            }
+            button {
+                background-color: #373C9B;
+                color: #ffffff;
+                border-radius: 20px;
+                border: none;
+                width: 90px;
+                height: 30px;
+                font-size: 0.75rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+    #info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #829DFF;
+        height: 1900px;
+        h2 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 3px #000000;
+            margin: 10rem 0 2rem 0;
+        }
+        .responsible {
+            width: 720px;
+            height: 600px;
+            .responsibleHeader {
+                width: 650px;
+                margin-bottom: 20px;
+                h3 {
+                    font-size: 2rem;
+                }
+                button {
+                    .editIcon {
+                        cursor: pointer;
+                        font-size: 2rem;
+                    }
+                }
+            }
+            .name {
+                width: 550px;
+                margin-bottom: 15px;
+                h4 {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+            }
+            .rg {
+                width: 550px;
+                h4 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .cpf {
+                width: 550px;
+                h4 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .email {
+                width: 550px;
+                h4 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .address {
+                width: 550px;
+                h4 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .phone1 {
+                width: 550px;
+                h4 {
+                    font-size: 1.2em;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .phone2 {
+                width: 550px;
+                h4 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .responsibleEdit {
+            width: 100%;
+            height: 1900px;
+            .responsibleEditArea {
+                width: 720px;
+                height: 820px;
+                margin-top: 17rem;
+                .responsibleEditHeader {
+                    width: 650px;
+                    h3 {
+                        color: #000000;
+                        font-size: 2rem;
+                        font-weight: 400;
+                    }
+                    button {
+                        .closeIcon {
+                            cursor: pointer;
+                            color: #000000;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .name {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .rg {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .cpf {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .email {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .address {
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .phone1 {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .phone2 {
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                button {
+                    background-color: #373C9B;
+                    color: #ffffff;
+                    border-radius: 20px;
+                    border: none;
+                    width: 120px;
+                    height: 40px;
+                    font-size: 1rem;
+                    margin-top: 2rem;
+                }
+            }
+        }
+        .patient {
+            width: 720px;
+            height: 650px;
+            .patientHeader {
+                width: 650px;
+
+                h3 {
+                    font-size: 2rem;
+                }
+                button {
+                    background-color: transparent;
+                    border: none;
+                    .editIcon {
+                        cursor: pointer;
+                        font-size: 2rem;
+                    }
+                }
+            }
+            .name {
+                width: 550px;
+                h4 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .rg {
+                width: 550px;
+                h4 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .cpf {
+                width: 550px;
+                h4 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .birth {
+                width: 550px;
+                h4 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .comments {
+                width: 550px;
+                h4 {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    margin-bottom: 5px;
+                }
+                p {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    height: 200px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .patientEdit {
+            height: 1900px;
+            .patientEditArea {
+                width: 720px;
+                height: 900px;
+                margin-top: 57rem;
+                .patientEditHeader {
+                    width: 650px;
+                    margin-bottom: 20px;
+                    h3 {
+                        font-size: 2rem;
+                    }
+                    button {
+                        .closeIcon {
+                            cursor: pointer;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .name {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .rg {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .cpf {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .birth {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input[type=date] {
+                        font-size: 1rem;
+                    }
+                }
+                .comments {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 300px;
+                    }
+                    input::placeholder {
+                        color: #000000;
+                        font-size: 1rem;
+                        transform: translate3d(10px,-120px,0);
+                        text-align: left;
+                    }
+                }
+                button {
+                    background-color: #373C9B;
+                    color: #ffffff;
+                    border-radius: 20px;
+                    border: none;
+                    width: 120px;
+                    height: 40px;
+                    font-size: 1rem;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1201px) {
+    #info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #829DFF;
+        height: 2400px;
+        h2 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 3px #000000;
+            margin: 10rem 0 2rem 0;
+        }
+        .responsible {
+            width: 950px;
+            height: 950px;
+            .responsibleHeader {
+                width: 780px;
+                margin-bottom: 20px;
+                h3 {
+                    font-size: 2rem;
+                }
+                button {
+                    .editIcon {
+                        cursor: pointer;
+                        font-size: 2rem;
+                    }
+                }
+            }
+            .name {
+                width: 650px;
+                margin: 1rem;
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+            .rg {
+                width: 650px;
+                margin: 1rem;
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+            .cpf {
+                width: 650px;
+                margin: 1rem;
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+            .email {
+                width: 650px;
+                margin: 1rem;
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+            .address {
+                width: 650px;
+                margin: 1rem;
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+            .phone1 {
+                width: 650px;
+                margin: 1rem;
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+            .phone2 {
+                width: 650px;
+                margin: 1rem;
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+        }
+        .responsibleEdit {
+            width: 100%;
+            height: 2400px;
+            .responsibleEditArea {
+                width: 720px;
+                height: 820px;
+                margin-top: 17rem;
+                .responsibleEditHeader {
+                    width: 650px;
+                    h3 {
+                        color: #000000;
+                        font-size: 2rem;
+                        font-weight: 400;
+                    }
+                    button {
+                        .closeIcon {
+                            cursor: pointer;
+                            color: #000000;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .name {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .rg {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .cpf {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .email {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .address {
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .phone1 {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .phone2 {
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                button {
+                    background-color: #373C9B;
+                    color: #ffffff;
+                    border-radius: 20px;
+                    border: none;
+                    width: 120px;
+                    height: 40px;
+                    font-size: 1rem;
+                    margin-top: 2rem;
+                }
+            }
+        }
+        .patient {
+            width: 950px;
+            height: 1000px;
+            margin: 4rem;
+            .patientHeader {
+                width: 780px;
+
+                h3 {
+                    font-size: 2rem;
+                }
+                button {
+                    background-color: transparent;
+                    border: none;
+                    .editIcon {
+                        cursor: pointer;
+                        font-size: 2rem;
+                    }
+                }
+            }
+            .name {
+                width: 650px;
+                margin: 1rem;
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+            .rg {
+                width: 650px;
+                margin: 1rem;
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+            .cpf {
+                width: 650px;
+                margin: 1rem;
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+            .birth {
+                width: 650px;
+                margin: 1rem;
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+            .comments {
+                width: 650px;
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    margin-bottom: 5px;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    height: 300px;
+                }
+            }
+        }
+        .patientEdit {
+            height: 2400px;
+            .patientEditArea {
+                width: 720px;
+                height: 900px;
+                margin-top: 80rem;
+                .patientEditHeader {
+                    width: 650px;
+                    margin-bottom: 20px;
+                    h3 {
+                        font-size: 2rem;
+                    }
+                    button {
+                        .closeIcon {
+                            cursor: pointer;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .name {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .rg {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .cpf {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input::placeholder {
+                        font-size: 1rem;
+                        transform: translate3d(10px,0,0);
+                    }
+                }
+                .birth {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 40px;
+                    }
+                    input[type=date] {
+                        font-size: 1rem;
+                    }
+                }
+                .comments {
+                    width: 500px;
+                    label {
+                        font-size: 1.2rem;
+                    }
+                    input {
+                        width: 500px;
+                        height: 300px;
+                    }
+                    input::placeholder {
+                        color: #000000;
+                        font-size: 1rem;
+                        transform: translate3d(10px,-120px,0);
+                        text-align: left;
+                    }
+                }
+                button {
+                    background-color: #373C9B;
+                    color: #ffffff;
+                    border-radius: 20px;
+                    border: none;
+                    width: 120px;
+                    height: 40px;
+                    font-size: 1rem;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}

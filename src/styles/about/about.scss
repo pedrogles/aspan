@@ -1,0 +1,119 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #829DFF;
+    border-radius: 0 0 10px 10px;
+    height: 43.75rem;
+    .aboutImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100vw;
+            margin-bottom: 2.5rem;
+        }
+    }
+    .aboutText {
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+        p {
+            font-size: 0.875rem;
+            text-align: center;
+            margin: 0 1.5rem;
+            color: #ffffff;
+        }
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    #about {
+        height: 103.125rem;
+        .aboutImage {
+            img {
+                width: 28.75rem;
+                height: 16.25rem;
+                border-radius: 1.25rem;
+            }
+        }
+        .aboutText {
+            h2 {
+                font-size: 2.5rem;
+                font-weight: 400;
+                text-align: center;
+                margin-bottom: 3rem;
+                color: #ffffff;
+            }
+            p {
+                font-size: 2rem;
+                text-align: center;
+                margin: 0 2rem;
+                width: auto;
+                color: #ffffff;
+            }
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+    #about {
+        flex-direction: row-reverse;
+        .aboutImage {
+            img {
+                width: 400px;
+                border-radius: 20px;
+                margin: 0 5rem 0 2rem;
+            }
+        }
+        .aboutText {
+            h2 {
+                font-size: 2rem;
+                font-weight: 400;
+                text-shadow: 2px 2px 3px #000000;
+                text-align: center;
+                margin-bottom: 3rem;
+                color: #ffffff;
+            }
+            p {
+                font-size: 1.125rem;
+                text-align: center;
+                margin: 0 2rem 0 5rem;
+                color: #ffffff;
+            }
+        }
+    }
+}
+@media (min-width: 1201px) {
+    #about {
+        height: 35rem;
+        flex-direction: row;
+        .aboutImage {
+            img {
+                width: 500px;
+                border-radius: 20px;
+                margin: 0 2rem 0 2rem;
+            }
+        }
+        .aboutText {
+            h2 {
+                font-size: 2rem;
+                font-weight: 400;
+                text-shadow: 2px 2px 3px #000000;
+                text-align: center;
+                margin-bottom: 3rem;
+                color: #ffffff;
+            }
+            p {
+                font-size: 1.125rem;
+                text-align: center;
+                width: 550px;
+                margin: 0 2rem 0 2rem;
+                color: #ffffff;
+            }
+        }
+    }
+}
